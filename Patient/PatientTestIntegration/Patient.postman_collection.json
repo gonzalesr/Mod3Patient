@@ -13,6 +13,15 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"const es_error = pm.collectionVariables.get(\"es_error\");\r",
+							"\r",
+							"if (es_error == 0) {\r",
+							"    pm.test(\"Status code is 400\", function () {\r",
+							"        pm.response.to.have.status(400);\r",
+							"    });\r",
+							"    return;\r",
+							"}\r",
+							"\r",
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
@@ -32,8 +41,19 @@
 					"script": {
 						"exec": [
 							"let uuid = require('uuid');\r",
-							"let guid = uuid.v4();\r",
-							"pm.collectionVariables.set(\"guid_prueba\",guid);\r",
+							"let lodash = require('lodash');\r",
+							"\r",
+							"const randomNo = lodash.random(0, 1);\r",
+							"pm.collectionVariables.set(\"es_error\", randomNo);\r",
+							"console.log(randomNo);\r",
+							"\r",
+							"if (randomNo == 0) {\r",
+							"    pm.collectionVariables.set(\"guid_prueba\", '');\r",
+							"} else {\r",
+							"    let guid = uuid.v4();\r",
+							"    pm.collectionVariables.set(\"guid_prueba\", guid);\r",
+							"    console.log(guid);\r",
+							"}\r",
 							"\r",
 							"// Generar una fecha aleatoria dentro de un rango de años\r",
 							"function getRandomDate() {\r",
@@ -63,6 +83,64 @@
 						}
 					}
 				},
+				"url": {
+					"raw": "https://localhost:7299/api/Patient",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patient List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const es_error = pm.collectionVariables.get(\"es_error\");\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check guid in response\", function () {\r",
+							"    const usedGuid = pm.collectionVariables.get(\"guid_prueba\");\r",
+							"    var jsonArr = pm.response.json();\r",
+							"    const filteredArr = jsonArr.filter(item => item.id === usedGuid);\r",
+							"    console.log(filteredArr);\r",
+							"    if (es_error == 0){\r",
+							"        pm.expect(filteredArr.length).to.eql(0);\r",
+							"    }else{\r",
+							"        pm.expect(filteredArr.length).to.eql(1);\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
 				"url": {
 					"raw": "https://localhost:7299/api/Patient",
 					"protocol": "https",
@@ -116,6 +194,10 @@
 			"key": "randomDate",
 			"value": "",
 			"type": "string"
+		},
+		{
+			"key": "es_error",
+			"value": ""
 		}
 	]
 }
