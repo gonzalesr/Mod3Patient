@@ -1,12 +1,88 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\temp\\Patient\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA2E9F-4106-418E-9241-69363EEE00BA}|PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj|c:\\users\\home\\documents\\github\\mod3patient\\patient\\patientmanagement.infrastructure\\handlers\\patient\\getipatientshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA2E9F-4106-418E-9241-69363EEE00BA}|PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj|solutionrelative:patientmanagement.infrastructure\\handlers\\patient\\getipatientshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6EFA8B2-F5C1-4C9F-AC98-D46641A579FA}|PatientManagement.Application\\PatientManagement.Application.csproj|c:\\users\\home\\documents\\github\\mod3patient\\patient\\patientmanagement.application\\patients\\getpatients\\getpatientsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6EFA8B2-F5C1-4C9F-AC98-D46641A579FA}|PatientManagement.Application\\PatientManagement.Application.csproj|solutionrelative:patientmanagement.application\\patients\\getpatients\\getpatientsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA2E9F-4106-418E-9241-69363EEE00BA}|PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj|c:\\users\\home\\documents\\github\\mod3patient\\patient\\patientmanagement.infrastructure\\patientmanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A5EA2E9F-4106-418E-9241-69363EEE00BA}|PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj|solutionrelative:patientmanagement.infrastructure\\patientmanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC321CA9-191B-412D-9BAD-15EB0A5DAE58}|PatientManagement.WebApi\\PatientManagement.WebApi.csproj|c:\\users\\home\\documents\\github\\mod3patient\\patient\\patientmanagement.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC321CA9-191B-412D-9BAD-15EB0A5DAE58}|PatientManagement.WebApi\\PatientManagement.WebApi.csproj|solutionrelative:patientmanagement.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetIPatientsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\Handlers\\Patient\\GetIPatientsHandler.cs",
+              "RelativeDocumentMoniker": "PatientManagement.Infrastructure\\Handlers\\Patient\\GetIPatientsHandler.cs",
+              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\Handlers\\Patient\\GetIPatientsHandler.cs",
+              "RelativeToolTip": "PatientManagement.Infrastructure\\Handlers\\Patient\\GetIPatientsHandler.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T02:02:11.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetPatientsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Application\\Patients\\GetPatients\\GetPatientsQuery.cs",
+              "RelativeDocumentMoniker": "PatientManagement.Application\\Patients\\GetPatients\\GetPatientsQuery.cs",
+              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Application\\Patients\\GetPatients\\GetPatientsQuery.cs",
+              "RelativeToolTip": "PatientManagement.Application\\Patients\\GetPatients\\GetPatientsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T01:51:33.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "PatientManagement.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.WebApi\\appsettings.json",
+              "RelativeToolTip": "PatientManagement.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-02T23:28:40.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientManagement.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj",
+              "RelativeToolTip": "PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-02T23:28:00.919Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

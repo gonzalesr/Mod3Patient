@@ -34,3 +34,16 @@ C:\temp\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.dll
 C:\temp\Patient\Patient.Domain\obj\Debug\net8.0\refint\PatientManagement.Domain.dll
 C:\temp\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.pdb
 C:\temp\Patient\Patient.Domain\obj\Debug\net8.0\ref\PatientManagement.Domain.dll
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\bin\Debug\net8.0\PatientManagement.Domain.deps.json
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\bin\Debug\net8.0\PatientManagement.Domain.dll
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\bin\Debug\net8.0\PatientManagement.Domain.pdb
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.AssemblyInfo.cs
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.sourcelink.json
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.dll
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\refint\PatientManagement.Domain.dll
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\PatientManagement.Domain.pdb
+C:\Users\Home\Documents\GitHub\Mod3Patient\Patient\Patient.Domain\obj\Debug\net8.0\ref\PatientManagement.Domain.dll

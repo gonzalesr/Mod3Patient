@@ -2825,11 +2825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj",
       "projectName": "PatientManagement.WebApi",
-      "projectPath": "C:\\temp\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj",
+      "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\Patient\\PatientManagement.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2846,8 +2846,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\temp\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj": {
-              "projectPath": "C:\\temp\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj"
+            "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj"
             }
           }
         }

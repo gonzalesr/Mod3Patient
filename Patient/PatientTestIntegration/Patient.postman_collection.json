@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "8b65f356-26de-437d-a249-fefce73d3839",
+		"name": "Patient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41542440"
+	},
+	"item": [
+		{
+			"name": "Add Patient",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"   const responseBody = pm.response.text();\r",
+							"  const guidRegex = /^\"[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}\"$/;\r",
+							"   \r",
+							"     pm.expect(responseBody).to.match(guidRegex);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let uuid = require('uuid');\r",
+							"let guid = uuid.v4();\r",
+							"pm.collectionVariables.set(\"guid_prueba\",guid);\r",
+							"\r",
+							"// Generar una fecha aleatoria dentro de un rango de años\r",
+							"function getRandomDate() {\r",
+							"    const start = new Date(2020, 0, 1).getTime(); // Fecha inicial (Ej: 2020-01-01)\r",
+							"    const end = new Date().getTime(); // Fecha actual como límite superior\r",
+							"    const randomTimestamp = Math.floor(Math.random() * (end - start) + start);\r",
+							"    return new Date(randomTimestamp).toISOString(); // Formato ISO 8601\r",
+							"}\r",
+							"\r",
+							"// Guardar la fecha en una variable de entorno en Postman\r",
+							"pm.environment.set(\"randomDate\", getRandomDate());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"{{guid_prueba}}\",\r\n  \"name\": \"{{$randomFullName}}\",\r\n  \"birthDate\": \"{{randomDate}}\",\r\n  \"gender\": \"MALE\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"{{$randomPhoneNumber}}\"\r\n    },\r\n{\r\n      \"number\": \"{{$randomPhoneNumber}}\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7299/api/Patient",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7299",
+					"path": [
+						"api",
+						"Patient"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "guid_prueba",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "estatus_esperado",
+			"value": "200",
+			"type": "string"
+		},
+		{
+			"key": "randomDate",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

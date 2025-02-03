@@ -14,7 +14,7 @@ internal class GetPatientHandler : IRequestHandler<GetPatientsQuery, IEnumerable
 {
     private readonly StoredDbContext _dbContext;
 
-    public GetPatientsHandler(StoredDbContext dbContext)
+    public GetPatientHandler(StoredDbContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -25,7 +25,11 @@ internal class GetPatientHandler : IRequestHandler<GetPatientsQuery, IEnumerable
             Select(i => new PatientDto()
             {
                 Id = i.Id,
-                ItemName = i.ItemName
+                Name = i.Name,
+                BirthDate = i.BirthDate,
+                Gender = i.Gender,
+                Email = i.Email,
+               
             }).
             ToListAsync(cancellationToken);
     }

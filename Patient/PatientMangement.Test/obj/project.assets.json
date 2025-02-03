@@ -6923,11 +6923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\Patient\\PatientMangement.Test\\PatientMangement.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientMangement.Test\\PatientMangement.Test.csproj",
       "projectName": "PatientMangement.Test",
-      "projectPath": "C:\\temp\\Patient\\PatientMangement.Test\\PatientMangement.Test.csproj",
+      "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientMangement.Test\\PatientMangement.Test.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\Patient\\PatientMangement.Test\\obj\\",
+      "outputPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientMangement.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6944,17 +6944,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\temp\\Patient\\Patient.Domain\\PatientManagement.Domain.csproj": {
-              "projectPath": "C:\\temp\\Patient\\Patient.Domain\\PatientManagement.Domain.csproj"
+            "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\Patient.Domain\\PatientManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\Patient.Domain\\PatientManagement.Domain.csproj"
             },
-            "C:\\temp\\Patient\\PatientManagement.Application\\PatientManagement.Application.csproj": {
-              "projectPath": "C:\\temp\\Patient\\PatientManagement.Application\\PatientManagement.Application.csproj"
+            "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Application\\PatientManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Application\\PatientManagement.Application.csproj"
             },
-            "C:\\temp\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj": {
-              "projectPath": "C:\\temp\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj"
+            "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.Infrastructure\\PatientManagement.Infrastructure.csproj"
             },
-            "C:\\temp\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj": {
-              "projectPath": "C:\\temp\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj"
+            "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj": {
+              "projectPath": "C:\\Users\\Home\\Documents\\GitHub\\Mod3Patient\\Patient\\PatientManagement.WebApi\\PatientManagement.WebApi.csproj"
             }
           }
         }
