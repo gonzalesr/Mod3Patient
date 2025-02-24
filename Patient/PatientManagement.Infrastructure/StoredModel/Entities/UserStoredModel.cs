@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PatientManagement.Infrastructure.StoredModel.Entities;
 [Table("user")]
-internal class UserStoredModel
+public class UserStoredModel
 {
     [Key]
     [Column("userId")]

@@ -12,7 +12,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PatientManagement.Application.Evaluations.CreateEvaluation
 {
-    internal class CreatePeriodicEvaluationHandler: IRequestHandler<CreatePeriodicEvaluationCommand,Guid>
+    public class CreatePeriodicEvaluationHandler: IRequestHandler<CreatePeriodicEvaluationCommand,Guid>
     {
         private readonly IPeriodicEvaluationFactory _periodicEvaluationFactory;
         private readonly IPeriodicEvaluationRepository _periodicEvaluationRepository;

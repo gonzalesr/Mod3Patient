@@ -10,8 +10,6 @@ using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PatientMangement.Test.Application.Patients
 {
@@ -39,7 +37,7 @@ namespace PatientMangement.Test.Application.Patients
             var command = new CreatePatientCommand(
                 patientId,
                 "John Doe",
-                new DateTime(1990, 1, 1),
+                new DateTime(2000, 1, 1),
                  "Male",
                 "john.doe@example.com",
                  new List<CreatePatientPhoneCommand>
@@ -79,10 +77,7 @@ namespace PatientMangement.Test.Application.Patients
 
             Assert.Equal(patientId, result);
 
-            // Verificar que el paciente se crea correctamente
-            //_patientFactory.Verify(factory => factory.Create(command.Id, command.name, command.birthDate, command.gender, command.email), Times.Once);
-
-            // Verificar que los teléfonos se añaden al paciente
+           // Verificar que los teléfonos se añaden al paciente
             Assert.Equal("123-456-7890", mockPatient.Phones.ToList()[0].Number);
 
             // Verificar que se guarda en el repositorio

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PatientManagement.Infrastructure.StoredModel.Entities
 {
     [Table("periodicEvaluation")]
-    internal class PeriodicEvaluationStoredModel
+    public class PeriodicEvaluationStoredModel
     {
         [Key]
         [Column("periodicEvaluationId")]

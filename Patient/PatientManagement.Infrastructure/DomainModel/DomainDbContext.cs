@@ -12,7 +12,7 @@ using PatientManagement.Domain.Evaluations;
 
 namespace PatientManagement.Infrastructure.DomainModel
 {
-    internal class DomainDbContext : DbContext
+    public class DomainDbContext : DbContext
     {
         public DbSet<Patient> Patient { get; set; }
         public DbSet<Phone> Phones { get; set; }

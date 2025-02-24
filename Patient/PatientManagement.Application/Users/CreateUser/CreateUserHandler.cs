@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PatientManagement.Application.Users.CreateUser;
 
-internal class CreateUserHandler : IRequestHandler<CreateUserCommand, Guid>
+public class CreateUserHandler : IRequestHandler<CreateUserCommand, Guid>
 {
     private readonly IUserRepository _userRepository;
     private readonly IUnitOfWork _unitOfWork;

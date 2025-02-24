@@ -25,7 +25,7 @@ namespace PatientManagement.Domain.Patients
             Number = number;
         }
 
-        internal Phone(Guid id, Guid patientId, string number)
+        public Phone(Guid id, Guid patientId, string number)
         {
             if (id == Guid.Empty) throw new ArgumentException("Id cannot be empty", nameof(id));
             if (patientId == Guid.Empty) throw new ArgumentException("PatientId cannot be empty", nameof(patientId));

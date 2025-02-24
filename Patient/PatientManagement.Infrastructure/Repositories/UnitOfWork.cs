@@ -10,7 +10,7 @@ using System.Collections.Immutable;
 
 namespace PatientManagement.Infrastructure.Repositories
 {
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly DomainDbContext _dbContext;
         private readonly IMediator _mediator;

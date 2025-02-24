@@ -10,7 +10,7 @@ using PatientManagement.Domain.Patients;
 namespace PatientManagement.Infrastructure.StoredModel.Entities
 {
     [Table("patient")]
-    internal class PatientStoredModel
+    public class PatientStoredModel
     {
         [Key]
         [Column("patientId")]

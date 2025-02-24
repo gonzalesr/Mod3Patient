@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PatientManagement.Application.InitialConsultation.CreateInitialConsultation
 {
-    internal class CreateInitialConsultationHandler: IRequestHandler<CreateInitialConsultationCommand, Guid>
+    public class CreateInitialConsultationHandler: IRequestHandler<CreateInitialConsultationCommand, Guid>
     {
         private readonly IInitialConsultationFactory _initialConsultationFactory;
         private readonly IInitialConsultationRepository _initialConsultationRepository;

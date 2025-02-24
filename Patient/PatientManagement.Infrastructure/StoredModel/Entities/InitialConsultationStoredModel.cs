@@ -10,7 +10,7 @@ using PatientManagement.Domain.Consultations;
 namespace PatientManagement.Infrastructure.StoredModel.Entities
 {
     [Table("initialConsultation")]
-    internal class InitialConsultationStoredModel
+    public class InitialConsultationStoredModel
     {
         [Key]
         [Column("initialConsultationId")]

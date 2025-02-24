@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PatientManagement.Infrastructure.StoredModel.Entities
 {
     [Table("phone")]
-    internal class PhoneStoredModel
+    public class PhoneStoredModel
     {
         [Key]
         [Column("phoneId")]

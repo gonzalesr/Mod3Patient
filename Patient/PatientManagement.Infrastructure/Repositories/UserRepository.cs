@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PatientManagement.Infrastructure.Repositories;
 
-internal class UserRepository : IUserRepository
+public class UserRepository : IUserRepository
 {
     private readonly DomainDbContext _dbContext;
 

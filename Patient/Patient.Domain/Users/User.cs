@@ -10,7 +10,7 @@ namespace PatientManagement.Domain.Users;
 public class User : AggregateRoot
 {
     public string FullName { get; private set; }
-    internal User(Guid id, string fullname) : base(id)
+    public User(Guid id, string fullname) : base(id)
     {
         FullName = fullname;
     }
